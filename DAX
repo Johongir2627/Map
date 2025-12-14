@@ -14,3 +14,8 @@ SWITCH(
     'Chocolate Sales'[Country] = "USA", "https://flagcdn.com/us.svg",
     'Chocolate Sales'[Country] = "UK", "https://flagcdn.com/gb.svg"
 )
+--------------------------------------------------------------------------------------------------------------
+3. concatenatex
+
+concat function = 
+CONCATENATEX(VALUES('Chocolate Sales'[Country]),'Chocolate Sales'[Country], ";")
