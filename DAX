@@ -28,4 +28,6 @@ Country = LOOKUPVALUE(Country[Country], Country[ID of Country], Film[CountryID],
 
 Region = LOOKUPVALUE(Region[Region], Region[RegionID], LOOKUPVALUE(Country[WorldRegionID], Country[ID of Country], Film[CountryID]))
 --------------------------------------------------------------------------------------------------------------
-6.
+6. lookup value with many columns
+
+Director = LOOKUPVALUE(Director[DoB], Director[FirstName], Film[DirectorFirstName], Director[FamilyName], Film[DirectorFamilyName])
