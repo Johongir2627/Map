@@ -31,3 +31,23 @@ Region = LOOKUPVALUE(Region[Region], Region[RegionID], LOOKUPVALUE(Country[World
 6. lookup value with many columns
 
 Director = LOOKUPVALUE(Director[DoB], Director[FirstName], Film[DirectorFirstName], Director[FamilyName], Film[DirectorFamilyName])
+--------------------------------------------------------------------------------------------------------------
+7. Total vs Previous
+
+% Total box shipped vs Prev Year = 
+var max_year = year(max(Sales[Date]))
+var current_year = calculate([Total Box Shipped], 'Calendar'[Year] = max_year)
+var prev_year = calculate([Total Box Shipped], 'Calendar'[Year] = max_year-1)
+return divide(current_year - prev_year, prev_year)
+--------------------------------------------------------------------------------------------------------------
+8. Putting 🔻🔼signs
+
+Total box Shipped vs Prev Month txt = 
+switch(
+true(), 
+'Measures table'[% Total box shipped vs Prev Year] > 0,
+"Total Sale: ▲ " & format('Measures table'[% Total box shipped vs Prev Year], "0.00%"),
+'Measures table'[% Total box shipped vs Prev Year] < 0,
+"Total Sale: ▼ " & format('Measures table'[% Total box shipped vs Prev Year], "0.00%"),
+isblank('Measures table'[% Total box shipped vs Prev Year], "N/A")
+)
