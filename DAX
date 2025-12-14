@@ -24,3 +24,8 @@ CONCATENATEX(VALUES('Chocolate Sales'[Country]),'Chocolate Sales'[Country], ";")
 
 Country = LOOKUPVALUE(Country[Country], Country[ID of Country], Film[CountryID], "Not Found")
 --------------------------------------------------------------------------------------------------------------
+5. nested lookupvalue
+
+Region = LOOKUPVALUE(Region[Region], Region[RegionID], LOOKUPVALUE(Country[WorldRegionID], Country[ID of Country], Film[CountryID]))
+--------------------------------------------------------------------------------------------------------------
+6.
