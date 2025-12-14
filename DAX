@@ -5,3 +5,12 @@ var total = [Total Sales]
 var selected = SELECTEDVALUE('Chocolate Sales'[Country])
 return if(not isBLANK(selected), "Country: " & selected, "Country: All")
 --------------------------------------------------------------------------------------------------------------
+
+2. Showing flags of countries using svg
+
+flags = 
+SWITCH(
+    TRUE(),
+    'Chocolate Sales'[Country] = "USA", "https://flagcdn.com/us.svg",
+    'Chocolate Sales'[Country] = "UK", "https://flagcdn.com/gb.svg"
+)
