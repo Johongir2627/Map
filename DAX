@@ -19,3 +19,8 @@ SWITCH(
 
 concat function = 
 CONCATENATEX(VALUES('Chocolate Sales'[Country]),'Chocolate Sales'[Country], ";")
+--------------------------------------------------------------------------------------------------------------
+4. lookupvalue
+
+Country = LOOKUPVALUE(Country[Country], Country[ID of Country], Film[CountryID], "Not Found")
+--------------------------------------------------------------------------------------------------------------
