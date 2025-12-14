@@ -1,0 +1,7 @@
+1. SHowing country names in data label in dax
+
+test = 
+var total = [Total Sales]
+var selected = SELECTEDVALUE('Chocolate Sales'[Country])
+return if(not isBLANK(selected), "Country: " & selected, "Country: All")
+--------------------------------------------------------------------------------------------------------------
