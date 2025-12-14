@@ -51,3 +51,21 @@ true(),
 "Total Sale: ▼ " & format('Measures table'[% Total box shipped vs Prev Year], "0.00%"),
 isblank('Measures table'[% Total box shipped vs Prev Year], "N/A")
 )
+--------------------------------------------------------------------------------------------------------------
+9. Creatin date table 
+
+Calendar = 
+VAR MinDate = MIN ( 'Chocolate Sales'[Date] )
+VAR MaxDate = MAX ( 'Chocolate Sales'[Date] )
+RETURN
+ADDCOLUMNS (
+    CALENDAR ( MinDate, MaxDate ),
+    "Year", YEAR ( [Date] ),
+    "Month Number", MONTH ( [Date] ),
+    "Month Name", FORMAT ( [Date], "mmmm" ),
+    "Quarter", QUARTER ( [Date] ),
+    "Day", DAY ( [Date] ),
+    "Weekday", WEEKDAY ( [Date] ),
+    "Weekday Name", FORMAT ( [Date], "dddd" ),
+    "QQ-YYYY", "Q" & QUARTER ( [Date] ) & "-" & YEAR ( [Date] )
+)
