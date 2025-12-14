@@ -8,13 +8,14 @@ Lesson02.✅ Power Query Editor
     -merge, append 42:10
     -pivot, unpivot, transpose 1:07:00
 
-Lesson06.  Introduction to DAX
+Lesson06.✅ Introduction to DAX
     -evaluate, filter, 12:30
     -showing country names in dax  22:00
     -showing flags in dax 25:30
     -datatypes 32:20
     -concatenate 50:00
     -invert range 1:30:00
+    -field parameter advanced 1:47:00
 
 Lesson13.✅ Intro to Dashboards
     -standart, tooltips, drill through, drill down 17:30
