@@ -69,3 +69,10 @@ ADDCOLUMNS (
     "Weekday Name", FORMAT ( [Date], "dddd" ),
     "QQ-YYYY", "Q" & QUARTER ( [Date] ) & "-" & YEAR ( [Date] )
 )
+--------------------------------------------------------------------------------------------------------------
+10. PM/PQ/PY Amount 
+PM Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[Date]))
+PQ Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSQUARTER('Calendar'[Date]))
+PD Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSDAY('Calendar'[Date]))
+PY Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSYEAR('Calendar'[Date]))
+
