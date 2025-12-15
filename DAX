@@ -123,10 +123,10 @@ dateadd pm = CALCULATE(SUM('Chocolate Sales'[Amount]), DATEADD('Calendar'[Date],
 
 same period last year = CALCULATE(SUM('Chocolate Sales'[Amount]), SAMEPERIODLASTYEAR('Calendar'[Date]))
 --------------------------------------------------------------------------------------------------------------
+17. ranking and parameter
 
-
-
-
+ranking = RANKX(ALL('Chocolate Sales'[Sales Person]), CALCULATE(SUM('Chocolate Sales'[Amount])),,DESC, Dense)
+check = if(Range[Range Value] >= [ranking], 1, 0)
 --------------------------------------------------------------------------------------------------------------
 
 
