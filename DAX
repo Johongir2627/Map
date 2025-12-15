@@ -113,8 +113,9 @@ var current_year = SUM('Chocolate Sales'[Amount])
 var prev_year = [PY Amount]
 return DIVIDE(current_year-prev_year, prev_year)
 --------------------------------------------------------------------------------------------------------------
+15. previous_month, parallel_period, dateadd
 
-
-
-
+PM Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[Date]))
+parallel period pm = CALCULATE(SUM('Chocolate Sales'[Amount]), PARALLELPERIOD('Calendar'[Date], -1, MONTH))
+dateadd pm = CALCULATE(SUM('Chocolate Sales'[Amount]), DATEADD('Calendar'[Date], -1, MONTH))
 --------------------------------------------------------------------------------------------------------------
