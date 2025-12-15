@@ -128,10 +128,12 @@ same period last year = CALCULATE(SUM('Chocolate Sales'[Amount]), SAMEPERIODLAST
 ranking = RANKX(ALL('Chocolate Sales'[Sales Person]), CALCULATE(SUM('Chocolate Sales'[Amount])),,DESC, Dense)
 check = if(Range[Range Value] >= [ranking], 1, 0)
 --------------------------------------------------------------------------------------------------------------
+18. dynamic data labels
 
-
-
-
+SWITCH( TRUE(),
+            [Total amount]<1E3,"#,0.0",
+            [Total amount] <1E6,"#,0,.0K",
+            [Total amount] <1E9,"#,0,,.0M","#,0,,,.0B")
 --------------------------------------------------------------------------------------------------------------
 
 
