@@ -119,3 +119,22 @@ PM Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[D
 parallel period pm = CALCULATE(SUM('Chocolate Sales'[Amount]), PARALLELPERIOD('Calendar'[Date], -1, MONTH))
 dateadd pm = CALCULATE(SUM('Chocolate Sales'[Amount]), DATEADD('Calendar'[Date], -1, MONTH))
 --------------------------------------------------------------------------------------------------------------
+16. same period last year
+
+same period last year = CALCULATE(SUM('Chocolate Sales'[Amount]), SAMEPERIODLASTYEAR('Calendar'[Date]))
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
