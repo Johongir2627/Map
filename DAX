@@ -75,4 +75,27 @@ PM Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[D
 PQ Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSQUARTER('Calendar'[Date]))
 PD Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSDAY('Calendar'[Date]))
 PY Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSYEAR('Calendar'[Date]))
+--------------------------------------------------------------------------------------------------------------
+11. YTD, MTD, QTD 
+Dates MTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESMTD('Calendar'[Date]))
+Dates QTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESQTD('Calendar'[Date]))
+Dates YTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESYTD('Calendar'[Date]))
+--------------------------------------------------------------------------------------------------------------
 
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
