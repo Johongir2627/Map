@@ -81,9 +81,10 @@ Dates MTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESMTD('Calendar'[Date])
 Dates QTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESQTD('Calendar'[Date]))
 Dates YTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESYTD('Calendar'[Date]))
 --------------------------------------------------------------------------------------------------------------
-
-
-
+12. Total YTD, MTD, QTD 
+Total MTD = TOTALMTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
+Total QTD = TOTALQTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
+Total YTD = TOTALYTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
 --------------------------------------------------------------------------------------------------------------
 
 
