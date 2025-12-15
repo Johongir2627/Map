@@ -71,24 +71,30 @@ ADDCOLUMNS (
 )
 --------------------------------------------------------------------------------------------------------------
 10. PM/PQ/PY Amount 
+
 PM Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[Date]))
 PQ Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSQUARTER('Calendar'[Date]))
 PD Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSDAY('Calendar'[Date]))
 PY Amount = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSYEAR('Calendar'[Date]))
 --------------------------------------------------------------------------------------------------------------
 11. YTD, MTD, QTD 
+
 Dates MTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESMTD('Calendar'[Date]))
 Dates QTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESQTD('Calendar'[Date]))
 Dates YTD = CALCULATE(SUM('Chocolate Sales'[Amount]), DATESYTD('Calendar'[Date]))
 --------------------------------------------------------------------------------------------------------------
 12. Total YTD, MTD, QTD 
+
 Total MTD = TOTALMTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
 Total QTD = TOTALQTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
 Total YTD = TOTALYTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
 --------------------------------------------------------------------------------------------------------------
+13. MTD vs PM
 
-
-
+% MDT vs PMTDT = 
+VAR prev_month_total = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('Calendar'[Date]))
+VAR mtd_amount = TOTALMTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
+RETURN DIVIDE(mtd_amount, prev_month_total)
 --------------------------------------------------------------------------------------------------------------
 
 
