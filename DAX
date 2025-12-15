@@ -96,10 +96,22 @@ VAR prev_month_total = CALCULATE(SUM('Chocolate Sales'[Amount]), PREVIOUSMONTH('
 VAR mtd_amount = TOTALMTD(SUM('Chocolate Sales'[Amount]), 'Calendar'[Date])
 RETURN DIVIDE(mtd_amount, prev_month_total)
 --------------------------------------------------------------------------------------------------------------
+14. MoM, QoQ, YoY 
 
+__MoM = 
+var current_month = SUM('Chocolate Sales'[Amount])
+var prev_month = [PM Amount]
+RETURN DIVIDE(current_month - prev_month, prev_month)
 
+___QoQ = 
+var current_q = SUM('Chocolate Sales'[Amount])
+var prev_q = [PQ Amount]
+return DIVIDE(current_q-prev_q, prev_q)
 
-
+__YoY = 
+var current_year = SUM('Chocolate Sales'[Amount])
+var prev_year = [PY Amount]
+return DIVIDE(current_year-prev_year, prev_year)
 --------------------------------------------------------------------------------------------------------------
 
 
