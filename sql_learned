@@ -8,3 +8,6 @@ Advanced:
 
 
 Temp Tables, Functions, Stored Procs, Merge
+dcl
+dtl
+database,datalake,datawarehouse
