@@ -3,7 +3,7 @@ Advanced:
 - cte: standalone cte, multiple cte, nested cte, recursive cte, derived table
 - subqueries: select, from, join, where
 - window functions: aggregated, rank, value
-- views: 
+- views, ctas
 
 
 
