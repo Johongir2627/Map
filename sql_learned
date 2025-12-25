@@ -1,35 +1,25 @@
 Advanced:
-
 - cte: standalone cte, multiple cte, nested cte, recursive cte, derived table
 - subqueries: select, from, join, where
 - window functions: aggregated, rank, value
 - views, ctas, temp
-
-
-
-, Functions, Stored Procs, Merge
+- functions, stored procs
 dcl
 dtl
 database,datalake,datawarehouse
-
-
-
-
 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 MAAB
 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+Lesson 11. Math functions
 Lesson 14. Review 
-Lesson 15. Views, Temp tables, Window functions
-        -recursive cte
-        -views
-        -local temp tables, global temp tables
+Lesson 15. Views, Temp tables, Window functions ::: recursive cte, views, local and global temp tables
 Lesson 16. Review
 Lesson 17. Functions and Stored Procedures
 Lesson 18. Review
 Lesson 19. Sending message via SQL
 Lesson 20. Indexing. Data WareHouse
 Lesson 21. Review
-
+Lesson 22. Interview questions
 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 
