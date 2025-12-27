@@ -3,11 +3,12 @@ Advanced:
 - subqueries: select, from, join, where
 - window functions: aggregated, rank, value
 - views, ctas, temp
-- functions, stored procs
-- indexes: clustered/non-clustered, rowstore/columnstore, unique/filtered
+functions, stored procs
+indexes: clustered/non-clustered, rowstore/columnstore, unique/filtered
 dcl
 dtl
 database,datalake,datawarehouse
+pivot unpivot, trigger
 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 MAAB
 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
